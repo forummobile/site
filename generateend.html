@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="img/favicon.ico" rel="shortcut icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>window.console = window.console || function(t) {};</script>
+  <title>Atomize</title>
+</head>
+<body>
+  <main class="main">
+    <section class="accommodation">
+      <div class="container accommodation__container">
+        <div class="accommodation__block">
+          <div class="accommodation__top">
+            <h3>ЭМИТЕНТ: РОСЦФА</h3>
+            <h3>ПРИВЛЕЧЬ ЛИКВИДНОСТЬ</h3>
+          </div>
+          <div class="accommodation__bottom">
+            <h4>РАЗМЕЩЕНИЕ №99 <span class="accommodation__status">СТАТУС: <span>ПОДВЕДЕНИЕ ИТОГОВ</span></span></h4>
+            <h4>Объявление о привлечении ликвидности</h4>
+          </div>
+          <div class="generating__flex">
+            <div class="generating__left">
+              <img src="img/puzzle.webp" alt="">
+            </div>
+            <div class="generating__right">
+              <div class="block__two">
+                <span class="block__two_bottom"></span>
+                <span class="block__two_radius"></span>
+                <div class="accommodation__text">
+                  <p class="accommodation__desc">Проверяем параметры выпуска и ждем подтверждения от инвесторов</p>
+                </div>
+              </div>
+              <div class="accommodation__buttons_two">
+                <a href="index.html" class="btn active accommodation__button"><span><img src="img/loader.svg" alt=""></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="sentence__images">
+            <img src="img/logo.webp" alt="">
+            <img src="img/logo.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const thisbutton =  document.querySelector('.accommodation__button');
+    const thisdesc =  document.querySelector('.accommodation__desc');
+    window.setTimeout(function () {
+      window.setTimeout(function () {
+        window.scrollTo(0,0);
+        window.location.href = 'end.html';
+      }, 3000);
+      window.scrollTo(0,0);
+      thisdesc.innerHTML = 'Ваша заявка принята<br><br>Организуем выпуск на платформе Атомайз';
+    }, 3000);
+  </script>
+</body>
+</html>

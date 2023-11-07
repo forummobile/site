@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="img/favicon.ico" rel="shortcut icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>window.console = window.console || function(t) {};</script>
+  <title>Atomize</title>
+</head>
+<body>
+  <main class="main">
+    <section class="accommodation">
+      <div class="container accommodation__container">
+        <div class="accommodation__block">
+          <div class="accommodation__top">
+            <h3>ЭМИТЕНТ: РОСЦФА</h3>
+            <h3>ПРИВЛЕЧЬ ЛИКВИДНОСТЬ</h3>
+          </div>
+          <div class="accommodation__bottom">
+            <h4>РАЗМЕЩЕНИЕ №99 <span class="accommodation__status" style="display:none;">СТАТУС: <span>СТАРТОВАЛО</span></span></h4>
+            <h4>Объявление о привлечении ликвидности</h4>
+          </div>
+          <div class="accommodation__flex">
+            <div class="accommodation__left">
+              <img src="img/coincart.webp" alt="">
+            </div>
+            <div class="accommodation__right">
+              <div class="block__one">
+                <span class="block__one_bottom"></span>
+                <span class="block__one_radius"></span>
+                <div class="accommodation__text">
+                  <p>ПЛОЩАДКА: <span>АО «СПВБ»</span></p>
+                  <p>ТИП РАЗМЕЩЕНИЯ: <span>ПЕРВИЧНОЕ БЕЗАДРЕСНОЕ РАЗМЕЩЕНИЕ</span></p>
+                  <p>ОБЪЕМ ПРИВЛЕЧЕНИЯ: <span>100 000 000 000 РУБ</span></p>
+                  <p>СРОК: <span>30 ДНЕЙ</span></p>
+                  <p>СТАВКА: <span>15,5%</span></p>
+                </div>
+              </div>
+              <div class="accommodation__buttons">
+                <a href="advantages.html" class="btn btn__white">Назад</a>
+                <a class="btn accommodation__button">Далее</a>
+              </div>
+              <div class="accommodation__images">
+                <img src="img/logo.webp" alt="">
+                <img src="img/logo.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const thisbutton =  document.querySelector('.accommodation__button');
+    thisbutton.addEventListener('click', function() {
+      thisbutton.previousElementSibling.classList.add("active");
+      thisbutton.classList.add("active");
+      thisbutton.innerHTML = '<span><img src="img/loader.svg" alt=""></span>';
+      document.querySelector('.accommodation__status').style.display = null;
+      window.setTimeout(function () {
+        window.scrollTo(0,0);
+        thisbutton.previousElementSibling.classList.remove("active");
+        thisbutton.classList.remove("active");
+        thisbutton.innerHTML = 'Далее';
+        window.location.href = 'sentence.html';
+      }, 3000);
+    })
+  </script>
+</body>
+</html>
